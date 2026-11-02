@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import reciptinterface from "../../interfaces/reciptinterface";
-import { remove } from "../../modules/ReceiptTable/BaseRecipt";
+import receiptinterface from "../../interfaces/receiptinterface";
+import { remove } from "../../modules/ReceiptTable/BaseReceipt";
 import ConformationBox from "../ConformationBox";
 
 type ChildComponentProps = {
-  receipts: reciptinterface[];
+  receipts: receiptinterface[];
 };
 
 const formatDate = (date: string) =>
@@ -15,7 +15,7 @@ function ReceiptTableMobile({ receipts }: ChildComponentProps) {
     useState<boolean>(false);
   const [toDelete, setToDelete] = useState<boolean>(false);
   const [receiptToDelete, setReceiptToDelete] =
-    useState<reciptinterface | null>(null);
+    useState<receiptinterface | null>(null);
 
   useEffect(() => {
     if (toDelete && receiptToDelete) {
@@ -45,7 +45,7 @@ function ReceiptTableMobile({ receipts }: ChildComponentProps) {
           </h1>
         </div>
       )}
-      {receipts.map((receipt: reciptinterface) => (
+      {receipts.map((receipt: receiptinterface) => (
         <article
           key={receipt.reciptID}
           className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"

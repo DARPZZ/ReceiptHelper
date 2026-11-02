@@ -1,4 +1,4 @@
-export default interface IRecipt{
+export default interface IReceipt{
     reciptID : number
     købsDato : string
     slutDato : string

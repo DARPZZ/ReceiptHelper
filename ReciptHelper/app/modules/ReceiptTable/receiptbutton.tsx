@@ -1,10 +1,10 @@
 import React from "react";
-type ReciptButtonProps = {
+type ReceiptButtonProps = {
   onClickEvent: () => void;
   text: boolean;
   header: string;
 };
-function Reciptbutton({ onClickEvent, text, header }: ReciptButtonProps) {
+function Receiptbutton({ onClickEvent, text, header }: ReceiptButtonProps) {
   return (
     <div className="flex p-4 flex-col border-solid border-4 text-center  rounded-lg border-blue-400 ">
       <h2>{header}</h2>
@@ -18,4 +18,4 @@ function Reciptbutton({ onClickEvent, text, header }: ReciptButtonProps) {
   );
 }
 
-export default Reciptbutton;
+export default Receiptbutton;

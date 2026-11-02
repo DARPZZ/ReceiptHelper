@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import reciptinterface from "../../interfaces/reciptinterface";
-import { remove } from "../../modules/ReceiptTable/BaseRecipt";
+import receiptinterface from "../../interfaces/receiptinterface";
+import { remove } from "../../modules/ReceiptTable/BaseReceipt";
 import ConformationBox from "../ConformationBox";
 
 type ChildComponentProps = {
-  receipts: reciptinterface[];
+  receipts: receiptinterface[];
 };
 
 const formatDate = (date: string) =>
@@ -19,7 +19,7 @@ const ReceiptTablePc = ({ receipts }: ChildComponentProps) => {
     useState<boolean>(false);
   const [toDelete, setToDelete] = useState<boolean>(false);
   const [receiptToDelete, setReceiptToDelete] =
-    useState<reciptinterface | null>(null);
+    useState<receiptinterface | null>(null);
 
   useEffect(() => {
     if (toDelete && receiptToDelete) {

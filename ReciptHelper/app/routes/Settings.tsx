@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProtectedRoute from "~/modules/ProtectedRoute";
-import { SetSettings, SetSettingsForOldRecipts } from "~/helpers/api/reciptapi";
+import { SetSettings, SetSettingsForOldReceipts } from "~/helpers/api/receiptapi";
 import { GetSettings } from "~/helpers/api/userapi";
 import SettingComp from "~/modules/SettingsComps/SettingComp";
 
@@ -34,7 +34,7 @@ function Settings() {
     visGamleKvitteringer
       ? setVisGamleKvitteringer(false)
       : setVisGamleKvitteringer(true);
-    await SetSettingsForOldRecipts(!visGamleKvitteringer);
+    await SetSettingsForOldReceipts(!visGamleKvitteringer);
   }
 
   return (

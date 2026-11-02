@@ -41,7 +41,7 @@ function Login() {
             Velkommen tilbage
           </p>
           <h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 dark:text-white">
-            Log på Recipt Helper
+            Log på Receipt Helper
           </h1>
           <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">
             Få adgang til dit kvitteringsarkiv og dine indstillinger.

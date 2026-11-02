@@ -1,14 +1,14 @@
-import IRecipt from "~/interfaces/reciptinterface";
-import { sletkvitEach } from "../../helpers/api/reciptapi";
+import IReceipt from "~/interfaces/receiptinterface";
+import { sletkvitEach } from "../../helpers/api/receiptapi";
 import { toast } from "react-toastify";
 export default async function SletKvitteringPåId(id: number) {
   const response = await sletkvitEach(id);
   return response;
 }
 
-export async function remove(reciptinterface: IRecipt) {
+export async function remove(receiptinterface: IReceipt) {
   try {
-    const response = await SletKvitteringPåId(reciptinterface.reciptID);
+    const response = await SletKvitteringPåId(receiptinterface.reciptID);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

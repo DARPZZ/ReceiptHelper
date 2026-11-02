@@ -32,7 +32,7 @@ export async function GetAllProductPrices(howMany:string) {
   return response;
 }
 
-export async function CreateRecipt(formData: any) {
+export async function CreateReceipt(formData: any) {
   const response = await fetch(`${api}/recipt/create`, {
     method: "POST",
     headers: {
@@ -65,7 +65,7 @@ export async function SetSettings(formData: any) {
 
   return response;
 }
-export async function SetSettingsForOldRecipts(end: boolean) {
+export async function SetSettingsForOldReceipts(end: boolean) {
   const response = await fetch(
     `${api}/recipt/set/updateShowOldKvitteringer?value=${end}`,
     {

@@ -1,18 +1,18 @@
 import React from "react";
 type props = {
-  reciptinterfaceProp: any;
+  receiptinterfaceProp: any;
 };
-export function ReciptTablePcAdvancedTH({ reciptinterfaceProp }: props) {
+export function ReceiptTablePcAdvancedTH({ receiptinterfaceProp }: props) {
   return (
     <th className="px-6 py-4 font-bold text-xl text-gray-900 whitespace-nowrap dark:text-white">
-      {reciptinterfaceProp.split("T")[0].split("-").reverse().join("-")}
+      {receiptinterfaceProp.split("T")[0].split("-").reverse().join("-")}
     </th>
   );
 }
-export function ReciptTableNonPcAdvancedTH({ reciptinterfaceProp }: props) {
+export function ReceiptTableNonPcAdvancedTH({ receiptinterfaceProp }: props) {
   return (
     <th className="px-6 py-4 font-bold text-xl text-gray-900 whitespace-nowrap dark:text-white">
-      {reciptinterfaceProp}
+      {receiptinterfaceProp}
     </th>
   );
 }

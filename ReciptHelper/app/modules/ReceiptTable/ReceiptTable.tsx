@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import reciptinterface from "../../interfaces/reciptinterface";
+import receiptinterface from "../../interfaces/receiptinterface";
 import GetReceiptByEmail, {
   GetReceiptByEmailNotOld,
-} from "~/helpers/api/reciptapi";
+} from "~/helpers/api/receiptapi";
 import ReceiptTablePc from "./ReceiptTablePc";
 import ReceiptTableMobile from "./ReceiptTableMobile";
 import { ToastContainer } from "react-toastify";
 import { GetSettings } from "~/helpers/api/userapi";
 
 function ReceiptTable() {
-  const [receipts, setReceipts] = useState<reciptinterface[]>([]);
-  const [filtredReceipts, setFiltredReceipts] = useState<reciptinterface[]>([]);
+  const [receipts, setReceipts] = useState<receiptinterface[]>([]);
+  const [filtredReceipts, setFiltredReceipts] = useState<receiptinterface[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   async function GetSettingsFirst() {
@@ -29,7 +29,7 @@ function ReceiptTable() {
       if (!(await response).ok) {
         throw new Error(`HTTP error! status: ${(await response).status}`);
       }
-      const data: reciptinterface[] = await (await response).json();
+      const data: receiptinterface[] = await (await response).json();
       const reversedData = data.reverse();
       setReceipts(reversedData);
       setFiltredReceipts(reversedData);

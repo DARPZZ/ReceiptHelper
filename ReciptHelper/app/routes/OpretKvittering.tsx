@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import CustomDatePicker from "~/helpers/CustomDatePicker";
-import { CreateRecipt } from "~/helpers/api/reciptapi";
+import { CreateReceipt } from "~/helpers/api/receiptapi";
 import ProtectedRoute from "~/modules/ProtectedRoute";
 
 function OpretKvittering() {
@@ -38,7 +38,7 @@ function OpretKvittering() {
         date.getDate(),
       ).padStart(2, "0")}`;
       formData.slutDato = formattedDate;
-      const response = await CreateRecipt(formData);
+      const response = await CreateReceipt(formData);
       if (response.ok) {
         navigate("/Dashboard");
       }

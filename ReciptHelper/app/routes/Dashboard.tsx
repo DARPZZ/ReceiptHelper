@@ -2,13 +2,13 @@ import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import ReceiptTable from "~/modules/ReceiptTable/ReceiptTable";
 import ProtectedRoute from "~/modules/ProtectedRoute";
-import { SletKvit, GetAllProductPrices } from "~/helpers/api/reciptapi";
+import { SletKvit, GetAllProductPrices } from "~/helpers/api/receiptapi";
 import StatsCard from "~/modules/StatsCard";
 import { GetSettings } from "~/helpers/api/userapi";
 
 function Dashboard() {
   const [combinedPrices, setCombinedPrices] = useState(0);
-  const [numberOfRecipts, setNumberOfRecipts] = useState(0);
+  const [numberOfReceipts, setNumberOfReceipts] = useState(0);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function Dashboard() {
     const json = await apiData.json();
     const total = getCombinedPrices(json);
     setCombinedPrices(total);
-    setNumberOfRecipts(json.length || 0);
+    setNumberOfReceipts(json.length || 0);
   }
 
   return (
@@ -94,7 +94,7 @@ function Dashboard() {
             />
             <StatsCard
               title="Kvitteringer"
-              value={numberOfRecipts}
+              value={numberOfReceipts}
               description="Antal kvitteringer i det aktuelle arkiv"
             />
           </div>
