@@ -1,6 +1,6 @@
 //local dev
 
-// export default " https://localhost:7295"
+export default " https://localhost:7295"
 
 //Pub dev
-export default "https://srv589522.hstgr.cloud/helper-api";
+// export default "https://srv589522.hstgr.cloud/helper-api";
