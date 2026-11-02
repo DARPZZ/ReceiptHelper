@@ -1,8 +1,8 @@
 {
-  "name": "recipthelper",
+  "name": "receipthelper",
   "private": true,
   "sideEffects": false,
-  "homepage": "htpps://DARPZZ.github.io/ReciptHelper/",
+  "homepage": "htpps://DARPZZ.github.io/ReceiptHelper/",
   "type": "module",
   "scripts": {
     "build": "react-router build",

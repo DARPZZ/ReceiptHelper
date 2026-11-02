@@ -1,1 +1,1 @@
-https://darpzz.github.io/ReciptHelper/
+https://darpzz.github.io/ReceiptHelper/
