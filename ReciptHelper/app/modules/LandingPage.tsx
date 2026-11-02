@@ -61,7 +61,7 @@ function LandingPage() {
               Kvitteringer samlet, søgbart og klar til reklamation
             </p>
             <h1 className="max-w-2xl text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Recipt Helper
+              Receipt Helper
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
               Et roligt digitalt arkiv til dine kvitteringer, så du hurtigt kan
@@ -92,7 +92,7 @@ function LandingPage() {
               Bygget til hverdagskøb og reklamationer
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
-              Recipt Helper holder informationen tæt på det, du faktisk skal
+              Receipt Helper holder informationen tæt på det, du faktisk skal
               bruge: produkt, pris, butik, købsdato og et direkte link til
               kvitteringen.
             </p>
@@ -132,7 +132,7 @@ function LandingPage() {
           >
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-600 dark:text-emerald-400">
-                Om Recipt Helper
+                Om Receipt Helper
               </p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 dark:text-white">
                 Mindre rod. Mere kontrol.
@@ -167,7 +167,7 @@ function LandingPage() {
 
       <footer className="border-t border-slate-200 bg-white px-4 py-8 dark:border-slate-800 dark:bg-slate-950 sm:px-6">
         <div className="app-container flex flex-col gap-2 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Recipt Helper.</p>
+          <p>© {new Date().getFullYear()} Receipt Helper.</p>
           <p>Gem kvitteringerne før du får brug for dem.</p>
         </div>
       </footer>

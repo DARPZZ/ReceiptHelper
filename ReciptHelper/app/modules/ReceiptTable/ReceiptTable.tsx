@@ -39,10 +39,10 @@ function ReceiptTable() {
   };
 
   useEffect(() => {
-    const filteredrecipt = receipts.filter((receipts) =>
+    const filteredreceipt = receipts.filter((receipts) =>
       receipts.produktNavn.toLowerCase().includes(searchTerm.toLowerCase()),
     );
-    setFiltredReceipts(filteredrecipt);
+    setFiltredReceipts(filteredreceipt);
   }, [searchTerm, receipts]);
 
   useEffect(() => {

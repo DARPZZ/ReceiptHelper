@@ -31,7 +31,7 @@ function Navbar() {
           </span>
           <span>
             <span className="block text-sm font-extrabold tracking-tight text-slate-950 dark:text-white">
-              Recipt Helper
+              Receipt Helper
             </span>
             <span className="hidden text-xs font-medium text-slate-500 sm:block">
               Digitalt kvitteringsarkiv
