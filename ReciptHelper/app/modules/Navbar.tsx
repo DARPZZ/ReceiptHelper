@@ -11,7 +11,7 @@ function Navbar() {
   useEffect(() => {
     const email = sessionStorage.getItem("login");
     setIsUserLoggedIn(email != null);
-    setIsOnRootPath(location.pathname == "/" || location.pathname == "/ReciptHelper/");
+    setIsOnRootPath(location.pathname == "/" || location.pathname == "/RecciptHelper/");
   }, [location.pathname]);
 
   function LogUserOut() {

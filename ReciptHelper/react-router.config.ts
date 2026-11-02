@@ -3,7 +3,7 @@ import { join } from "node:path";
 import type { Config } from "@react-router/dev/config";
 
 export default {
-  basename: "/ReciptHelper/",
+  basename: "/ReceiptHelper/",
   ssr: false,
   buildEnd({ viteConfig }) {
     if (!viteConfig.isProduction) return;
